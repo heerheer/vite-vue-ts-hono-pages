@@ -1,10 +1,11 @@
 name = "vite-vue-ts-hono-pages"
 main = "src/index.ts"
 compatibility_date = "2024-06-01"
+pages_build_output_dir = "dist"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "my-database"
+database_name = "demo"
 database_id = "1a4d1e81-0ab8-4487-bbac-2d3f9b6de22b"
 
 
