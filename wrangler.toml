@@ -1,5 +1,4 @@
 name = "vite-vue-ts-hono-pages"
-main = "src/index.ts"
 compatibility_date = "2024-06-01"
 pages_build_output_dir = "dist"
 
@@ -8,13 +7,6 @@ binding = "DB"
 database_name = "demo"
 database_id = "1a4d1e81-0ab8-4487-bbac-2d3f9b6de22b"
 
-
 [dev]
 port = 7878
 ip = "0.0.0.0"
-
-[[migrations]]
-tag = "init"
-
-[site]
-bucket = "./dist" 
