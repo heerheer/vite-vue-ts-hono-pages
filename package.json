@@ -1,0 +1,39 @@
+{
+  "name": "vite-vue-hono-pages",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run dev:client & bun run dev:server",
+    "dev:server": "vite dev --config vite.config.server.ts",
+    "dev:client": "vite dev --config vite.config.client.ts",
+    "build:server": "vite build --config vite.config.server.ts",
+    "build:client": "vite build --config vite.config.client.ts",
+    "build": "vue-tsc -b && bun run build:client && bun run build:server",
+    "deploy": "bun run build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "daisyui": "^5.0.46",
+    "hono": "^4.8.4",
+    "iconify-icon": "^3.0.0",
+    "motion-v": "^1.5.0",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250705.0",
+    "@hono/vite-dev-server": "^0.20.0",
+    "@types/bun": "^1.2.18",
+    "@types/node": "^24.0.10",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "@hono/vite-build": "^1.6.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "concurrently": "^9.2.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0",
+    "vue-tsc": "^2.2.10",
+    "wrangler": "^4.23.0"
+  }
+}

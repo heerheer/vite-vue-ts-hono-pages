@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --vite-color: #646cff;
+  --vue-color: #42b883;
+  --hono-color: #ff7d3b;
+  --pages-color: #f6993a;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  @apply m-0 flex items-center justify-center
+}
+
+button {
+  @apply btn w-auto
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.my-card {
+  @apply flex flex-col gap-2 p-2 items-center
+}
+
+#app {
+  max-width: 1280px;
+  @apply p-2 text-center mx-auto
+}
